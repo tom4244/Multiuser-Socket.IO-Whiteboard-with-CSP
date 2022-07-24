@@ -1,0 +1,55 @@
+{
+  "name": "Meeting-Scheduler",
+  "sideEffects": [
+    "*.scss",
+    "*.css"
+  ],
+  "scripts": {
+    "start": "npm run build",
+    "build": "nodemon --watch server --exec babel-node -- server/index.js",
+    "//": "build:prod may need to be reconfigured for your use-case",
+    "build:prod": "exec babel-node -- server/index.js",
+    "react-devtools": "react-devtools"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "css-loader": "^6.6.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-dev-middleware": "^5.3.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "core-js": "^3.21.1",
+    "express": "^4.17.3",
+    "fibers": "^5.0.1",
+    "helmet": "^5.0.2",
+    "jotai": "^1.6.0",
+    "nodemon": "^2.0.18",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2",
+    "regenerator-runtime": "^0.13.9",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1",
+    "uuid": "^8.3.2"
+  },
+  "permissions": {
+    "cross-domain-content": [
+      "https://tbcan.net:3000/socket.io/",
+      "https://tbcan.net/bundle.js"
+    ]
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  }
+}

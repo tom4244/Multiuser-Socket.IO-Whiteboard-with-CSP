@@ -26,5 +26,5 @@ This project uses React, Javascript, NodeJS, Jotai Atoms, Express, Nginx, Socket
 * Run "npm install" to install all needed nodejs packages and dependencies.
 * Start the Nginx reverse proxy server if used.
 * Run "npm start" to start the Express server.
-* The whiteboard will be available at http://localhost in any browser.
+* As provided, the whiteboard can first be tried on http://localhost; when hosted on an internet server (comments in the code include instructions for switching to an https site), it can be used on any platform (desktop, tablet, or smartphone) in browsers.
 

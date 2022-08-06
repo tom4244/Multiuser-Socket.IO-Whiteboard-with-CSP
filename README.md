@@ -16,7 +16,7 @@ Use a real-time online collaborative whiteboard in browsers on desktop, tablet, 
 
 This project uses React, Javascript, NodeJS, Jotai Atoms, Express, Nginx, Socket.IO, Canvas, Webpack, Flexbox, and SCSS.
 
-<img src="./src/app/img/whiteboard.jpg">
+![whiteboard.jpg](https://github.com/tom4244/Multiuser-Socket.IO-Whiteboard-with-CSP/blob/main/src/app/img/whiteboard.png\?raw\=true)
 
 # Installation
 * The project is configured to use an Express server for both http and socket.io with an Nginx server as a reverse proxy. The Express server is configured in the server/index.js file. An example nginx.conf file for Nginx server configuration with the needed "proxy pass" set up is included. 
